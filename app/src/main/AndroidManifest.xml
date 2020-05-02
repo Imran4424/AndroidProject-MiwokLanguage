@@ -8,8 +8,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FamilyMembersActivity"></activity>
-        <activity android:name=".NumbersActivity"></activity>
+        <activity android:name=".ColorsActivity"></activity>
+        <activity android:name=".FamilyMembersActivity" />
+        <activity android:name=".NumbersActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
