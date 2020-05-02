@@ -15,6 +15,7 @@
  */
 package com.example.android.miwok;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -31,18 +32,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openNumbers(View view) {
-
+        startActivity(new Intent(this, NumbersActivity.class));
     }
 
     public void openFamilyMembers(View view) {
-
+        startActivity(new Intent(this, FamilyMembersActivity.class));
     }
 
     public void openColors(View view) {
-
+        startActivity(new Intent(this, ColorsActivity.class));
     }
 
     public void openPhrases(View view) {
-
+        startActivity(new Intent(this, PhrasesActivity.class));
     }
 }
