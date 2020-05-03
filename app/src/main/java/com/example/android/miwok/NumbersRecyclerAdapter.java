@@ -33,12 +33,12 @@ public class NumbersRecyclerAdapter extends RecyclerView.Adapter<NumbersRecycler
 
     @Override
     public void onBindViewHolder(@NonNull NumbersRecyclerAdapter.ViewHolder holder, int position) {
-
+        holder.englishText.setText(numbers.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return numbers.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
