@@ -35,5 +35,9 @@ public class NumbersActivity extends AppCompatActivity {
 
         final RecyclerView numberRecyclerList = (RecyclerView) findViewById(R.id.numberRecycler);
         final LinearLayoutManager numberLayoutManager = new LinearLayoutManager(this);
+        numberRecyclerList.setLayoutManager(numberLayoutManager);
+
+        final NumbersRecyclerAdapter numbersRecyclerAdapter = new NumbersRecyclerAdapter(this, numbers);
+        numberRecyclerList.setAdapter(numbersRecyclerAdapter);
     }
 }
