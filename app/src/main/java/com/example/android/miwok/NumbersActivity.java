@@ -33,7 +33,8 @@ public class NumbersActivity extends AppCompatActivity {
         for(int i = 0; i < numbers.size(); i++) {
             TextView numberContainer = new TextView(this);
             numberContainer.setText(numbers.get(i));
-            
+            numberContainer.setTextSize(35);
+            rootView.addView(numberContainer);
         }
     }
 }
