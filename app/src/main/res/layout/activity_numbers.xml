@@ -8,6 +8,7 @@
     tools:context=".NumbersActivity">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/numberRecycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="8dp"
@@ -18,5 +19,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_numbers_list" />
 </androidx.constraintlayout.widget.ConstraintLayout>

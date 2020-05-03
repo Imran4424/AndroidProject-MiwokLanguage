@@ -1,6 +1,8 @@
 package com.example.android.miwok;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -9,7 +11,7 @@ import java.util.ArrayList;
 
 public class NumbersActivity extends AppCompatActivity {
 
-    LinearLayout rootView;
+    RecyclerView numberRecycler;
     ArrayList<String> numbers = new ArrayList<String>();
 
     @Override
@@ -17,7 +19,7 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
 
-        rootView = (LinearLayout) findViewById(R.id.verticalLinearLayout);
+        numberRecycler = (RecyclerView) findViewById(R.id.numberRecycler);
 
         numbers.add("one");
         numbers.add("two");
@@ -30,11 +32,6 @@ public class NumbersActivity extends AppCompatActivity {
         numbers.add("nine");
         numbers.add("ten");
 
-        for(int i = 0; i < numbers.size(); i++) {
-            TextView numberContainer = new TextView(this);
-            numberContainer.setText(numbers.get(i));
-            numberContainer.setTextSize(35);
-            rootView.addView(numberContainer);
-        }
+
     }
 }
