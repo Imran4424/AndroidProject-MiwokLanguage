@@ -3,6 +3,7 @@ package com.example.android.miwok;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -28,5 +29,11 @@ public class NumbersActivity extends AppCompatActivity {
         numbers.add("eight");
         numbers.add("nine");
         numbers.add("ten");
+
+        for(int i = 0; i < numbers.size(); i++) {
+            TextView numberContainer = new TextView(this);
+            numberContainer.setText(numbers.get(i));
+            
+        }
     }
 }
