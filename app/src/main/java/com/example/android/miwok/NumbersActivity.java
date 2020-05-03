@@ -1,6 +1,7 @@
 package com.example.android.miwok;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -32,6 +33,7 @@ public class NumbersActivity extends AppCompatActivity {
         numbers.add("nine");
         numbers.add("ten");
 
-
+        final RecyclerView numberRecyclerList = (RecyclerView) findViewById(R.id.numberRecycler);
+        final LinearLayoutManager numberLayoutManager = new LinearLayoutManager(this);
     }
 }
