@@ -5,6 +5,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -41,9 +42,11 @@ public class NumbersRecyclerAdapter extends RecyclerView.Adapter<NumbersRecycler
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
+        public final TextView englishText;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            englishText = (TextView) itemView.findViewById(R.id.englishText);
         }
     }
 }
